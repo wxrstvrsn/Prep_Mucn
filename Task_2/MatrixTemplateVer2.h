@@ -63,7 +63,7 @@ public:
     bool operator!=(const MatrixTemplate &other);
 
     //! Fill entire matrix with given value
-    void fill(const T &value);
+    void fillEntire(const T &value);
 
     //! Fill row with given value
 
@@ -149,7 +149,7 @@ bool MatrixTemplate<T>::operator!=(const MatrixTemplate &other) {
 }
 
 template<typename T>
-void MatrixTemplate<T>::fill(const T &value) {
+void MatrixTemplate<T>::fillEntire(const T &value) {
     for(int i = 0; i < data.size(); ++i) {
         data[i] = value;
     }
